@@ -1,0 +1,426 @@
+#body {
+  margin-bottom: 0px;
+}
+
+#mainContents {
+  margin: 0 5% 0 5%;
+}
+/* header section */
+.grid-container.header {
+  display: flex;
+  justify-content: center;
+  margin: 5% 5% 0 5%;
+  /* grid-template-columns: 10% 90%; */
+}
+.centerContainer {
+  max-width: 960px;
+}
+.grid-item {
+  background-color: white;
+}
+
+.titleText {
+  /* text-align: center; */
+  margin-bottom: 25px;
+  font-family: "Squada One", cursive;
+  font-weight: 500;
+  font-size: 3.5rem;
+  color: #678bc7;
+  line-height: 3.5rem;
+}
+
+.intro {
+  margin-bottom: 0rem;
+  font-family: 'Montaga', serif;
+  font-size: 1rem;
+  /* line-height: 1.5rem; */
+}
+
+.titleImportant {
+  color: rgb(30, 30, 30);
+}
+
+/* main section */
+.main {
+  display: grid;
+  margin-bottom: 0rem;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  margin: 2% auto;
+  
+}
+
+.questionLine {
+  width: 60%;
+}
+
+.portraits {
+  display: flex;
+  justify-content: center;
+  /* padding: 2% auto; */
+  padding-bottom: 0rem;
+  
+}
+
+.grid-container.selectBox {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
+.divOfSelectBox {
+  margin-right: 20%;
+  padding-left: 10px;
+  display: inline;
+  border-left: 5px solid rgb(245, 181, 5);
+}
+
+.titleOfSelectBox {
+  margin-bottom: 0.2rem;
+  margin-top: 0rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 0.9rem;
+  color: rgb(121, 89, 4);
+}
+
+.questionSelect {
+  height: 30px;
+  background-color: transparent;
+  margin-top: 0px;
+  margin-right: 10px;
+  padding-left: 2px;
+  padding-right: 10px;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border-width: 0px;
+  font-family: 'Signika', sans-serif;
+  font-size: 1.2rem;
+  color: rgb(58, 58, 58);
+}
+
+.questionSelect.categories {
+  background: url("img/selectBackground_shot.svg") no-repeat right center;
+  width: 150px;
+  margin-right: 5%;
+}
+
+.questionSelect.update {
+  background: url("img/selectBackground.svg") no-repeat right center;
+  width: 580px;
+}
+
+select {
+  outline: none
+}
+
+/* dropDownBox */
+.divOfUpdatedIntro {
+  position: relative;
+  height: 110px;
+  margin-top: 1rem;
+}
+
+.divOfUpdatedInfo_detailed {
+  position: relative;
+  margin-top: 0.6rem;
+  border-left: 5px solid rgb(226, 6, 6);
+  padding-left: 0.8rem;
+  /* height: 50px; */
+  max-width: 960px;
+}
+
+.updatedIntro {
+  position: absolute; 
+  margin: 0.6rem auto 0 auto;
+  padding-left: 0.8rem;
+  border-left: 5px solid #678bc7;
+  font-family: 'Montaga', serif;
+  font-size: 1rem;
+  color: #084177;
+  visibility: hidden;
+
+}
+
+.updatedInfo {
+  height: 220px;
+}
+
+#divOfEducationAbroad {
+  display: inline;
+  margin-top: 0rem;
+}
+
+.educationAbroad_img {
+  height: 25px;
+  width: auto;
+  margin-top: 0rem;
+  margin-bottom: -0.3rem;
+}
+
+.education {
+  display: inline;
+}
+
+.otherTexts {
+  display: inline;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1rem;
+  color: rgb(3, 45, 83);
+}
+
+.defaultTexts {
+  display: inline;
+  font-family: 'Signika', sans-serif;
+  font-size: 1.1rem;
+  color: #303960;
+  position: relative;
+  margin-top: 0.6rem;
+
+}
+
+.education.universityName {
+  font-family: 'Signika', sans-serif;
+  font-size: 1.1rem;
+  color: rgb(3, 45, 83);
+  opacity: 0.8;
+}
+
+.education.additionInfo {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 0.8rem;
+  color: rgb(83, 82, 3);
+  opacity: 0.8;
+}
+
+/* education_1 */
+.hightLightedTexts {
+  display: inline;
+  font-family: 'Signika', sans-serif;
+  font-size: 1.1rem;
+  color: black;
+}
+
+.hightLightedTexts.red {
+  background-color: #fc9d9d;
+}
+
+.hightLightedTexts.blue {
+  background-color: #a4e7f8;
+}
+
+.hightLightedTexts.green {
+  background-color: #a9eec2;
+}
+
+.hightLightedTexts.orange {
+  background-color: #ffd31d;
+}
+
+/* tooltip */
+.tooltip {
+  position: absolute;
+  top: 50px;
+  left: -35px;
+  width: 150px;
+  border: 1px solid rgb(48, 48, 48);
+  border-right: 8px solid rgb(48, 48, 48);
+  border-bottom: 3px solid rgb(48, 48, 48);
+  background: white;
+  text-align: center;
+  transition: all 0.2s ease-out;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.tooltipName {
+  margin-top: 5px;
+  font-family: "Cairo", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.tooltipYear {
+  margin-bottom: 5px;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 0.9rem;
+  color: rgb(173, 4, 4);
+}
+
+/* tooltip */
+
+/* imgGallery */
+#architect {
+  position: relative;
+  display: inline;
+}
+
+img {
+  display: inline;
+  width: 90px;
+  margin: 4px;
+}
+/* the style of the image (not default) */
+.otherProperty {
+  filter: grayscale(0);
+  border: 1px solid rgb(180, 180, 180);
+}
+
+/* the style of the image (not default) when being hovered */
+.otherProperty:hover {
+  transform: scale(1);
+  border-style: groove;
+  border: 2px solid rgb(3, 242, 250);
+}
+
+/* the style of tooltip when it is not default mode of each section */
+.otherProperty:hover~.tooltip {
+  top: 60px;
+  left: -25px;
+  background: rgba(255, 255, 255, 0.9);
+  transform: skew(0deg);
+}
+
+.otherProperty.default {
+  filter: grayscale(0);
+  z-index: 1;
+}
+
+.otherProperty.default:hover {
+  position: relative;
+  filter: grayscale(0);
+  transform: scale(1.5);
+  border: 2px solid rgba(241, 71, 71, 0.9);
+  border-left: 10px solid rgba(241, 71, 71, 0.6);
+  border-top: 5px solid rgba(241, 71, 71, 0.6);
+  z-index: 2;
+}
+
+.otherProperty.default:hover~.tooltip {
+  top: 65px;
+  left: -55px;
+  box-shadow: 20px 10px 0px 3px rgba(241, 71, 71, 0.9);
+  transform: skew(-10deg);
+}
+
+#section {
+  max-width: 1024px; 
+}
+
+#section:hover>.architect {
+  opacity: 1;
+}
+
+#section:hover>.architect:not(:hover) {
+  opacity: 0.6;
+  /* filter: grayscale(1); */
+}
+
+.section {
+  justify-content: center;
+}
+
+.otherProperty.default {
+  filter: grayscale(0);
+}
+
+/* imgGallery */
+.portraits {
+  margin-bottom: 70px;
+}
+.summaryContainer {
+  position: relative;
+  margin: 0.6rem auto 5rem auto;
+  border-left: 5px solid rgb(140, 235, 77);
+  padding-left: 0.8rem;
+  max-width: 960px;
+}
+.summary_title {
+  font-family: 'Signika', sans-serif;
+}
+.summary_contents {
+  font-family: 'Montaga', serif;
+}
+.summary_link {
+  text-decoration: underline;
+}
+.divider {
+  size: 1rem;
+  width: 50%;
+  color: #084177;
+  margin-bottom: 0;
+}
+
+.copyRightText {
+  margin: 5px auto 50px auto;
+  text-align: center;
+}
+@media only screen and (min-width: 1441px) {
+  #section {
+    max-width: 1024px; 
+  }
+
+  .grid-item.portraits {
+    padding: 2% 5%;
+  }
+
+  .titleText {
+    margin-top: 25px;
+  }
+  .grid-container.header {
+    margin: 1.5% 5% 0 5%;
+  }
+  /* .tooltip {
+    width: 180px;
+  } */
+
+  /* .tooltipName {
+    font-size: 1.2rem;
+  }
+
+  .tooltipYear {
+    font-size: 1.1rem;
+  } */
+
+  /* img {
+    width: 120px;
+    margin: 5px;
+  } */
+
+  .divOfUpdatedImg {
+    width: 100%;
+  }
+
+  .divOfAgeImg {
+    text-align: center;
+  }
+
+  .titleImg {
+    width: 160px;
+  }
+
+  .Btn {
+    font-size: 1rem;
+  }
+}
+/* @media only screen and (min-width: 1800px) {
+  #header {
+    margin: 1% 5%;
+  }
+
+  .grid-item.portraits {
+    padding: 2% 4%;
+  }
+
+  img {
+    margin: 8px;
+  }
+} */
+
+
+/* p {
+  word-break: break-all;
+  white-space: normal;
+} */

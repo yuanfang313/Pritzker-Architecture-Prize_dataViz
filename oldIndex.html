@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Saira:wght@500&family=Squada+One&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&family=Rajdhani&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Signika:wght@600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="main.css" />
+  <title>People Who Won The Pritzker Architecture</title>
+</head>
+
+<body>
+  <section id="header">
+    <div class="grid-container header">
+      <div class="grid-item img">
+        <img class="titleImg" src="img/medal.png" alt="" />
+      </div>
+      <div class="grid-item text">
+        <p class="titleText">
+          <span class="titleImportant">People</span> Who Won <br />The
+          Pritzker <span class="titleImportant">Architecture</span> Prize
+        </p>
+        <p class="intro">
+          I think I can safely say that, The
+          <strong> Pritzker Architecture Prize</strong> is the "Nobel Prize"
+          for architects (check the detailed description of the prize in
+          <a href="https://en.wikipedia.org/wiki/Pritzker_Architecture_Prize">Wikipedia</a>
+          ). This project is a try to reveal some facts of people who had won
+          the prize, and hopefully give you a chance to take a glance of the
+          mysterious life of these brilliant architects as a group.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="mainContents">
+    <div class="main">
+      <div id="filtersContainer" class="filters">
+        <div class="divOfSelectBox categories">
+          <select id="questionSelect_categories" class="questionSelect categories">
+            <option value="life">Personal Life:</option>
+            <option value="education">Education:</option>
+            <option value="career">Career:</option>
+          </select>
+        </div>
+        <div class="divOfSelectBox update">
+          <select id="questionSelect_update" class="questionSelect update"></select>
+        </div>
+        <div class="grid-container dropDownBox">
+
+          <div class="grid-item divOfSelectBox life">
+            <h1 class="titleOfSelectBox">Personal Life:</h1>
+            <select id="questionSelect_1" class="questionSelect life">
+            </select>
+          </div>
+          <div class="grid-item divOfSelectBox career">
+            <h1 class="titleOfSelectBox">Education:</h1>
+            <select id="questionSelect_2" class="questionSelect career">
+            </select>
+          </div>
+          <div class="grid-item divOfSelectBox prize">
+            <h1 class="titleOfSelectBox">Career:</h1>
+            <select id="questionSelect_3" class="questionSelect prize">
+            </select>
+
+
+          </div>
+        </div>
+        <div class="updatedInfo">
+          <hr class="questionLine">
+          <h1 id="updatedQuestion" class="updatedQuestion">
+            Select a Question from above...
+          </h1>
+          <p id="updatedNotes" class="updatedNotes">
+            &Eumlcole nationale sup&eacuterieure des beaux-arts Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+            est laborum.
+          </p>
+          <div class="updatedInfo_detailed">
+            <!-- <h3 id="updatedInfo_name" class="updatedInfo_name"></h3> -->
+            <div id="divOfEducation_2"></div>
+            <p id="education_11d" class="education universityName"></p>
+            <p id="education_12d" class="education additionInfo"></p>
+
+            <p id="education_21d" class="education universityName"></p>
+            <p id="education_22d" class="education additionInfo"></p>
+
+            <p id="education_31d" class="education universityName"></p>
+            <p id="education_32d" class="education additionInfo"></p>
+
+          </div>
+        </div>
+      </div>
+
+      <div id="portraitsContainer" class="portraits">
+      </div>
+    </div>
+  </section>
+
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="new.js"></script>
+</body>
+
+</html>

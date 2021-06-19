@@ -1,4 +1,4 @@
-# Pritzker Architecture Prize_dataViz
+# People Who Won the Pritzker Architecture Prize
 ### It is a data viz project aimming at presenting the life facts of the laureates of Pritzker Architecture Prize (1979 - 2020)
 
 - [Project Link](https://yuanfang313.github.io/Pritzker-Architecture-Prize_dataViz/)
